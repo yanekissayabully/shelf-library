@@ -2,6 +2,8 @@
 
 A single page app for tracking a personal library: browse 100+ books, search and filter them, open a book, change its reading status, and add your own books.
 
+Live: https://midterm-tau-puce.vercel.app
+
 Built with Next.js (App Router), React and TypeScript. No UI or state libraries.
 
 ## Features
