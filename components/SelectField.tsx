@@ -9,10 +9,11 @@ interface SelectFieldProps<V extends string> {
   label: string;
   value: V;
   options: Option<V>[];
+  disabled?: boolean;
   onChange: (value: V) => void;
 }
 
-export function SelectField<V extends string>({ label, value, options, onChange }: SelectFieldProps<V>) {
+export function SelectField<V extends string>({ label, value, options, disabled, onChange }: SelectFieldProps<V>) {
   const id = useId();
 
   return (
@@ -24,6 +25,7 @@ export function SelectField<V extends string>({ label, value, options, onChange 
         id={id}
         className="select"
         value={value}
+        disabled={disabled}
         onChange={(event) => onChange(event.target.value as V)}
       >
         {options.map((option) => (
