@@ -459,3 +459,7 @@ h3 {
     align-items: flex-start;
   }
 }
+
+.filters__order {
+  align-self: flex-end;
+}
