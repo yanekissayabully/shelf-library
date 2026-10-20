@@ -463,3 +463,7 @@ h3 {
 .filters__order {
   align-self: flex-end;
 }
+
+.detail .badge {
+  margin-bottom: 10px;
+}
